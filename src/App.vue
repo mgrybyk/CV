@@ -1,15 +1,15 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import CV from './components/CV/CV.vue'
 </script>
 
 <template>
-  <header>
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
+  <header></header>
 
-  <main></main>
+  <main>
+    <div class="mx-auto max-w-screen-md container">
+      <CV />
+    </div>
+  </main>
 </template>
 
 <style scoped></style>

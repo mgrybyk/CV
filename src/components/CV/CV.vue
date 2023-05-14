@@ -21,40 +21,41 @@ const {
 <template>
   <CVSection>
     <template #leftSide>
-      <h1 id="section-1" class="font-sans">
-        <p v-once class="text-2xl" v-text="fullName"></p>
-        <p v-once class="text-lg text-orange-500" v-text="jobTitle"></p>
+      <h1 class="mb-1 mt-1 font-sans">
+        <p v-once class="mb-1 mt-1 text-2xl" v-text="fullName"></p>
+        <p v-once class="mb-1 mt-1 text-lg text-sky-900" v-text="jobTitle"></p>
       </h1>
     </template>
     <template #rightSide>
       <div class="font-serif">
         <p v-once v-text="cityCountry"></p>
-        <p>
+        <div>
           <a
             v-if="phone"
             v-once
             :href="`tel:${email}`"
-            class="block text-amber-600 no-underline"
+            class="text-sky-800 no-underline"
             v-text="phone"
           ></a>
+        </div>
+        <div>
           <a
             v-if="email"
             v-once
             :href="`mailto:${email}`"
-            class="block text-amber-600 no-underline"
+            class="text-sky-800 no-underline"
             v-text="email"
           ></a>
-        </p>
-        <p>
-          <a
-            v-for="(item, index) in resourceLinks"
-            v-once
-            :key="index"
-            :href="item.href"
-            class="block no-underline"
-            v-text="item.text"
-          ></a>
-        </p>
+        </div>
+        <div class="my-4">
+          <div v-for="(item, index) in resourceLinks" v-once :key="index">
+            <a
+              :href="item.href"
+              class="text-sky-800 no-underline visited:text-sky-700"
+              v-text="item.text"
+            ></a>
+          </div>
+        </div>
       </div>
     </template>
   </CVSection>

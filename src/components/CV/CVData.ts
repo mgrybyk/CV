@@ -53,6 +53,45 @@ by efficiently achieving our shared goals.`
       ]
     },
     {
+      mainTitle: 'ServiceHouse',
+      subTitle: 'Senior Software Development Engineer in Test',
+      subStrings: ['Jul 2020 - Jul 2021, Amsterdam, Netherlands'],
+      list: [
+        `Implemented integration and end-to-end frameworks, enabling efficient testing of complex software systems`,
+        `Introduced automation roadmap and best practices, resulting in increased test coverage and more effective use of testing resources`,
+        `Adopted CI processes to include static analysis, automation phases, and reporting, ensuring high standards of code quality and reliability`,
+        `Led test design and pull request reviews, providing technical guidance and ensuring adherence to established testing standards and best practices`,
+        `Mentored team members and provided technical training, helping to build a strong and capable development team`
+      ]
+    },
+    {
+      mainTitle: 'Ciklum',
+      subTitle: 'Senior Software Development Engineer in Test',
+      subStrings: ['Apr 2018 - Mar 2020,  Malaga, Spain'],
+      list: [
+        `Built integration framework with Cypress, resulting in a more efficient and effective testing process for complex software systems`,
+        `Built end-to-end framework with WebdriverIO to run browser, mobile browser, and React Native app tests, leveraging Selenium Grid and Appium to ensure comprehensive test coverage across multiple platforms and devices`,
+        `Led and mentored a team of five automation engineers from a technical perspective, providing technical guidance and training to ensure the development of a strong and capable team`,
+        `Actively contributed to the WebdriverIO open-source project, participating in code reviews, bug fixes, and new feature development`,
+        `Tech stack: WebdriverIO, Appium, Cypress, BackstopJS, Detox, BrowserStack`
+      ]
+    },
+    {
+      mainTitle: 'Micro Focus',
+      subTitle: 'Senior QA Automation Engineer',
+      subStrings: ['Sep 2016 - Apr 2018,  Kyiv, UA', 'Project: Deployment Automation'],
+      list: [
+        `Built REST automation framework using Java, enabling more efficient and effective testing of complex REST APIs`,
+        `Built end-to-end automation framework using Java, Webdriver, and TestNG, resulting in the implementation of over 2,500 automated tests and ensuring comprehensive test coverage across multiple platforms`,
+        `Implemented internal Docker infrastructure from scratch, including configuring CentOS servers, designing Docker images, and building a web app to monitor and manage images and containers`,
+        `Built a web app using VueJS, NodeJS, and MongoDB to manage and monitor test execution and test environments in real-time, leveraging WebSockets to provide real-time updates`,
+        `Built other internal tools to improve reporting, generate test data, and automate the integration of QA and dev tools with corporate infrastructure, streamlining and automating manual and routine tasks`,
+        `Mentored manual and automation QAs, providing technical guidance and training to ensure the development of a strong and capable team`,
+        `Collaborated closely with all team members, including developers, QAs, and managers, to identify and automate time-consuming and routine tasks, identify defects early in the development cycle, and provide better visibility to each other`,
+        `Participated in every feature discussion session as an expert user of Deployment Automation, providing valuable input on design and ensuring that the team moved in the right direction`
+      ]
+    },
+    {
       mainTitle: 'Serena Software',
       subTitle: 'Senior QA Engineer',
       subStrings: [
@@ -70,6 +109,27 @@ and test execution with nightly and one-button on-demand jobs.
 This saved both manual QAs and developers up to half a day daily.`,
         `Additionally, I created a small web app with NodeJS and Angular v1 to monitor and manage test environments.`
       ]
+    },
+    {
+      mainTitle: 'Serena Software',
+      subTitle: 'QA Engineer',
+      subStrings: [
+        'Jan 2012 - Sep 2014,  Kyiv, UA',
+        'Projects: Requirement Manager, Development Manager'
+      ],
+      text: [
+        `As a QA Engineer, I took a proactive approach in every SDLC phase, spending most of my efforts on analysis, design, and planning to optimize later stages. I experimented with risk-based approaches to accelerate release time and minimize manual testing.`,
+        `During my tenure, I invested my personal time in learning Jenkins, C#, Ranorex, batch, PowerShell, and attended a 4-month course on HTML/CSS/JavaScript. This dedication resulted in a significant reduction in product set-up time, from 2.5 hours to only 20 minutes, thanks to my essential Jenkins and automation knowledge.`
+      ]
+    },
+    {
+      mainTitle: 'Wincor-Nixdorf',
+      subTitle: 'Junior QA Engineer',
+      subStrings: ['Sep 2010 - Dec 2012,  Kyiv, UA', 'Project: Namos'],
+      text: [
+        `I began my QA career with guidance from experienced mentors, who taught me industry-standard processes, testing methodologies, and MSSQL debugging techniques. In my role as QA Engineer, I also oversaw the internal QA lab, leveraging my hardware expertise to ensure optimal performance.`,
+        `During this time, I created my first C# tool to streamline test data generation and enhance testing efficiency, demonstrating my passion for automation and problem-solving.`
+      ]
     }
   ],
 
@@ -79,6 +139,16 @@ This saved both manual QAs and developers up to half a day daily.`,
       subTitle: 'Foundation Level',
       subStrings: ['Feb 2015'],
       link: { text: 'Certificate', href: 'https://goo.gl/jy7jsH' }
+    },
+    {
+      mainTitle: 'Galytska Academy',
+      subTitle: 'Bachelor',
+      subStrings: ['Jul 2011 - Dec 2012']
+    },
+    {
+      mainTitle: 'National Technical University of Ukraine',
+      subTitle: 'Kyiv Polytechnic Institute',
+      subStrings: ['Sep 2006 - May 2009']
     }
   ]
 }

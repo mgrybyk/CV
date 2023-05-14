@@ -5,7 +5,7 @@ defineProps<{
   sectionId?: string
   recordId?: string
   mainTitle: string
-  subTitle: string
+  subTitle?: string
   subStrings: Array<string>
   paragraphs?: Array<string>
   list?: Array<string>
@@ -19,7 +19,7 @@ defineProps<{
       <div>
         <h3 class="mb-0 text-lg">
           <span v-once v-text="mainTitle"></span>
-          <span class="group font-normal">
+          <span v-if="subTitle" class="group font-normal">
             / <span v-once v-text="subTitle"></span>
             <a
               v-if="recordId"

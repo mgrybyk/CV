@@ -23,7 +23,7 @@ const {
     <template #leftSide>
       <h1 id="section-1" class="font-sans">
         <p v-once class="text-2xl" v-text="fullName"></p>
-        <p v-once class="text-xl" v-text="jobTitle"></p>
+        <p v-once class="text-lg text-orange-500" v-text="jobTitle"></p>
       </h1>
     </template>
     <template #rightSide>

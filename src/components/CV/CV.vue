@@ -29,7 +29,7 @@ const {
     <template #rightSide>
       <div class="font-serif">
         <p v-once v-text="cityCountry"></p>
-        <div>
+        <div class="mb-3">
           <a
             v-if="phone"
             v-once
@@ -48,7 +48,7 @@ const {
           ></a>
         </div>
         <div class="my-4">
-          <div v-for="(item, index) in resourceLinks" v-once :key="index">
+          <div v-for="(item, index) in resourceLinks" v-once :key="index" class="mt-3">
             <a
               :href="item.href"
               class="text-sky-800 no-underline visited:text-sky-700"

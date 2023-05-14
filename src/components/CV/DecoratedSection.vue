@@ -25,7 +25,7 @@ defineProps<{
               v-if="recordId"
               :id="recordId"
               :href="`#${recordId}`"
-              class="ml-1 text-sky-600 no-underline opacity-0 group-hover:opacity-100"
+              class="ml-1 text-sky-700 no-underline opacity-0 group-hover:opacity-100"
               aria-label="Anchor"
               >#</a
             ></span

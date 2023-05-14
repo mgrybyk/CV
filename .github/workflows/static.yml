@@ -41,6 +41,7 @@ jobs:
       - name: build
         env:
           VITE_CV_EMAIL: ${{ secrets.VITE_CV_EMAIL }}
+          NODE_ENV: production
         run: npm run build-only
       - name: Setup Pages
         uses: actions/configure-pages@v3

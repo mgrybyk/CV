@@ -47,7 +47,14 @@ defineProps<{
         <li v-for="(item, index) in list" v-once :key="index" v-text="item"></li>
       </ul>
       <p>
-        <a v-if="link" v-once :href="link.href" target="_blank" v-text="link.text"></a>
+        <a
+          v-if="link"
+          v-once
+          class="print:hidden"
+          :href="link.href"
+          target="_blank"
+          v-text="link.text"
+        ></a>
       </p>
     </template>
   </CVSection>

@@ -7,29 +7,30 @@ export const CVData = {
 
   languages: 'English, Ukrainian, Russian',
 
+  yearsOfExperience: new Date().getFullYear() - 2010,
+
   summary: [
     `
 As a seasoned Senior SDET with a strong background in frontend development,
 I have a proven track record of building end-to-end automation frameworks and implementing CI/CD pipelines.`,
-    `With a passion for problem-solving and a proactive, goal-oriented approach,
-I excel at efficiently allocating my efforts to achieve the best possible results.`,
-    `I am thrilled to leverage my skills and experience to contribute to your team's success
-by efficiently achieving our shared goals.`
+    `With a passion for problem-solving and a proactive, goal-oriented approach, I am thrilled to leverage my skills 
+    and experience to efficiently allocate efforts and achieve the best possible results, contributing to your team's success.`
   ],
 
   resourceLinks: [
     {
       text: 'linkedin.com/in/mykola-grybyk-361ab140',
-      href: 'https://www.linkedin.com/in/mykola-grybyk-361ab140'
+      href: 'https://www.linkedin.com/in/mykola-grybyk-361ab140',
+      hidePrintMode: true
     },
     { text: 'github.com/mgrybyk', href: 'https://github.com/mgrybyk' },
-    { text: 'mgrybyk.m-utils.win (CV)', href: 'https://goo.gl/et70lm' }
+    { text: 'cv.mgrybyk.icu (CV)', href: 'https://cv.mgrybyk.icu' }
   ],
 
   skills: [
     'Programming languages: TypeScript, JavaScript, Java, Bash, Batch',
     'Automation: Playwright, WebdriverIO, Selenium Webdriver, Appium, Cypress, BackstopJS, Lighthouse, Jest, Mocha, RestAssured, TestNG, various reporters like Allure',
-    'CI/CD: Jenkins, Docker, Kubernetes, AWS, GitHub',
+    'CI/CD/Cloud: Jenkins, Docker, Kubernetes, AWS, GitHub',
     'Operating systems: Windows, Linux, Mac',
     'Databases: MS SQL, Oracle, PostgreSQL, MongoDB',
     'Virtualization: VirtualBox, VMware ESXi',
@@ -39,7 +40,7 @@ by efficiently achieving our shared goals.`
     'Code quality tools: ESLint, SonarQube'
   ],
 
-  workingHistory: [
+  workingHistoryMain: [
     {
       mainTitle: 'Elsevier',
       subTitle: 'Senior Software Development Engineer in Test',
@@ -90,7 +91,10 @@ by efficiently achieving our shared goals.`
         `Collaborated closely with all team members, including developers, QAs, and managers, to identify and automate time-consuming and routine tasks, identify defects early in the development cycle, and provide better visibility to each other`,
         `Participated in every feature discussion session as an expert user of Deployment Automation, providing valuable input on design and ensuring that the team moved in the right direction`
       ]
-    },
+    }
+  ],
+
+  workingHistoryOld: [
     {
       mainTitle: 'Serena Software',
       subTitle: 'Senior QA Engineer',
@@ -138,16 +142,16 @@ This saved both manual QAs and developers up to half a day daily.`,
       mainTitle: 'ISTQB® Certified Tester',
       subTitle: 'Foundation Level',
       subStrings: ['Feb 2015'],
-      link: { text: 'Certificate', href: 'https://goo.gl/jy7jsH' }
+      link: { text: 'Certificate', href: '/files/ISTQB_Mykola_Grybyk.pdf' }
     },
     {
       mainTitle: 'Galytska Academy',
-      subTitle: 'Bachelor',
-      subStrings: ['Jul 2011 - Dec 2012']
+      subTitle: 'Computer Science',
+      subStrings: ['Jul 2011 - Dec 2012', 'Bachelor']
     },
     {
-      mainTitle: 'National Technical University of Ukraine',
-      subTitle: 'Kyiv Polytechnic Institute',
+      mainTitle: 'National Technical University of Ukraine (KPI)',
+      subTitle: 'Computer Science',
       subStrings: ['Sep 2006 - May 2009']
     }
   ]

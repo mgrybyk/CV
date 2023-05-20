@@ -6,7 +6,7 @@ defineProps<{
 </script>
 
 <template>
-  <section class="grid grid-cols-[1fr_2fr] break-inside-avoid">
+  <section class="grid break-inside-avoid print:grid-cols-[2fr_5fr] sm:grid-cols-[2fr_5fr]">
     <div class="pe-4">
       <slot name="leftSide">
         <div class="group">
@@ -16,6 +16,7 @@ defineProps<{
               v-if="sectionId"
               v-once
               :href="`#${sectionId}`"
+              target="_blank"
               class="text-sky-700 no-underline opacity-0 group-hover:opacity-100"
               aria-label="Anchor"
               >#</a

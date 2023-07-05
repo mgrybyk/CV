@@ -10,7 +10,7 @@ defineProps<{
     <div class="pe-4">
       <slot name="leftSide">
         <div class="group">
-          <h2 v-if="sectionTitle" v-once :id="sectionId" class="font-sans text-lg">
+          <h2 v-if="sectionTitle" v-once :id="sectionId" class="text-lg font-sans">
             {{ sectionTitle }}
             <a
               v-if="sectionId"

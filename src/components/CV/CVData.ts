@@ -10,9 +10,7 @@ export const CVData = {
   yearsOfExperience: new Date().getFullYear() - 2010,
 
   summary: [
-    `
-As a seasoned Senior SDET with a strong background in frontend development,
-I have a proven track record of building end-to-end automation frameworks and implementing CI/CD pipelines.`,
+    `I'm a seasoned Senior SDET with a strong background in frontend development, expertise in building test automation frameworks, and implementing CI/CD pipelines.`,
     `With a passion for problem-solving and a proactive, goal-oriented approach, I am thrilled to leverage my skills 
     and experience to efficiently allocate efforts and achieve the best possible results, contributing to your team's success.`
   ],

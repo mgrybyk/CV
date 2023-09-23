@@ -16,7 +16,6 @@ defineProps<{
               v-if="sectionId"
               v-once
               :href="`#${sectionId}`"
-              target="_blank"
               class="text-sky-700 no-underline opacity-0 group-hover:opacity-100"
               aria-label="Anchor"
               >#</a

@@ -36,7 +36,7 @@ defineProps<{
         v-for="(item, index) in subStrings"
         v-once
         :key="index"
-        class="mb-0 mt-0 text-sm leading-4 text-gray-600"
+        class="mb-0 mt-0 text-sm text-gray-600 leading-4"
         v-text="item"
       ></p>
       <div v-if="paragraphs">

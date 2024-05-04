@@ -2,7 +2,7 @@ export const CVData = {
   email: import.meta.env.VITE_CV_EMAIL,
   phone: import.meta.env.VITE_CV_PHONE,
   fullName: 'Mykola Grybyk',
-  jobTitle: 'Senior Software Development Engineer in Test',
+  jobTitle: 'Senior Frontend Developer',
   cityCountry: 'Amsterdam, Netherlands',
 
   languages: 'English, Ukrainian, Russian',
@@ -10,15 +10,14 @@ export const CVData = {
   yearsOfExperience: new Date().getFullYear() - 2010,
 
   summary: [
-    `I'm a seasoned Senior SDET with a strong background in frontend development, expertise in building test automation frameworks, and implementing CI/CD pipelines.`,
-    `With a passion for problem-solving and a proactive, goal-oriented approach, I am thrilled to leverage my skills 
-    and experience to efficiently allocate efforts and achieve the best possible results, contributing to your team's success.`
+    `I'm a passionate Senior Frontend Developer with a keen eye for building blazing-fast, intuitive, and modern web applications using React and Vue.js.`,
+    `My extensive QA engineering experience empowers me to seamlessly integrate automated testing practices throughout the development lifecycle.`
   ],
 
   resourceLinks: [
     {
-      text: 'linkedin.com/in/mykola-grybyk-361ab140',
-      href: 'https://www.linkedin.com/in/mykola-grybyk-361ab140',
+      text: 'linkedin.com/in/mykola-grybyk',
+      href: 'https://www.linkedin.com/in/mykola-grybyk',
       hidePrintMode: true
     },
     { text: 'github.com/mgrybyk', href: 'https://github.com/mgrybyk' },
@@ -41,8 +40,16 @@ export const CVData = {
   workingHistoryMain: [
     {
       mainTitle: 'Elsevier',
+      subTitle: 'Senior Frontend Developer',
+      subStrings: ['Jan 2023 - now, Amsterdam, Netherlands'],
+      list: [
+        `Tech stack: TypeScript, Node.js, React, TanStack, Storybook, Playwright, Lighthouse, Cloudflare, AWS, Kubernetes, Docker, Checkmarx, Twistlock`
+      ]
+    },
+    {
+      mainTitle: 'Elsevier',
       subTitle: 'Senior Software Development Engineer in Test',
-      subStrings: ['Sep 2021 - now, Amsterdam, Netherlands'],
+      subStrings: ['Sep 2021 - Jan 2023, Amsterdam, Netherlands'],
       list: [
         `Led automation activities in two teams, developing and implementing software testing strategies for complex projects involving both frontend and backend technologies`,
         `Assisted developers with building automation tests, and provided technical guidance on testing frameworks and best practices`,

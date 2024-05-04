@@ -79,13 +79,6 @@ const isExpanded = ref(false)
       </p>
     </template>
   </CVSection>
-  <CVSection section-title="Skills" section-id="skills">
-    <template #rightSide>
-      <ul>
-        <li v-for="(item, index) in skills" v-once :key="index" v-text="item"></li>
-      </ul>
-    </template>
-  </CVSection>
   <DecoratedSection
     v-for="(item, index) in workingHistoryMain"
     v-once
@@ -121,6 +114,13 @@ const isExpanded = ref(false)
           Show {{ isExpanded === true ? 'Less' : 'More...' }}
         </button>
       </p>
+    </template>
+  </CVSection>
+  <CVSection section-title="Skills" section-id="skills">
+    <template #rightSide>
+      <ul>
+        <li v-for="(item, index) in skills" v-once :key="index" v-text="item"></li>
+      </ul>
     </template>
   </CVSection>
   <DecoratedSection

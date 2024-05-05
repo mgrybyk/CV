@@ -2,7 +2,7 @@ export const CVData = {
   email: import.meta.env.VITE_CV_EMAIL,
   phone: import.meta.env.VITE_CV_PHONE,
   fullName: 'Mykola Grybyk',
-  jobTitle: 'Senior Frontend Developer',
+  jobTitle: 'Frontend Engineer',
   cityCountry: 'Amsterdam, Netherlands',
 
   languages: 'English, Ukrainian, Russian',
@@ -10,8 +10,8 @@ export const CVData = {
   yearsOfExperience: new Date().getFullYear() - 2010,
 
   summary: [
-    `I'm a passionate Senior Frontend Developer with a keen eye for building blazing-fast, intuitive, and modern web applications using React and Vue.js.`,
-    `My extensive QA engineering experience empowers me to seamlessly integrate automated testing practices throughout the development lifecycle.`
+    `Passionate Frontend (React, Vue) & Fullstack (Node.js) Engineer with a proven track record of building high-performance, user-friendly web applications.`,
+    `Leveraging my 10+ years of SDET experience, I seamlessly integrate automated testing practices and CI/CD pipelines throughout the development lifecycle to ensure reliable and maintainable applications.`
   ],
 
   resourceLinks: [
@@ -25,12 +25,11 @@ export const CVData = {
   ],
 
   skills: [
-    'Programming languages: TypeScript, JavaScript, Java, Bash, Batch',
-    'Automation: Playwright, WebdriverIO, Selenium Webdriver, Appium, Cypress, BackstopJS, Lighthouse, Jest, Mocha, RestAssured, TestNG, various reporters like Allure',
-    'CI/CD/Cloud: Jenkins, Docker, Kubernetes, AWS, GitHub',
+    'Programming languages: TypeScript, JavaScript, Bash, Java',
+    'Automation: Playwright, WebdriverIO, Selenium Webdriver, Appium, Cypress, BackstopJS, Lighthouse, Jest, Mocha, Vitest, RestAssured, TestNG, various reporters like Allure',
+    'CI/CD/Cloud: GitHub Actions, Jenkins, Cloudflare, AWS, Docker, Kubernetes',
     'Operating systems: Windows, Linux, Mac',
     'Databases: MS SQL, Oracle, PostgreSQL, MongoDB',
-    'Virtualization: VirtualBox, VMware ESXi',
     'Interviewing and mentoring',
     'Frontend frameworks: Vue.js, React, Storybook',
     'Build tools: Vite, Webpack',
@@ -40,7 +39,7 @@ export const CVData = {
   workingHistoryMain: [
     {
       mainTitle: 'Elsevier',
-      subTitle: 'Senior Frontend Developer',
+      subTitle: 'Senior Frontend Engineer',
       subStrings: ['Jan 2023 - now, Amsterdam, Netherlands'],
       list: [
         `Tech stack: TypeScript, Node.js, React, TanStack, Storybook, Playwright, Lighthouse, Cloudflare, AWS, Kubernetes, Docker, Checkmarx, Twistlock`

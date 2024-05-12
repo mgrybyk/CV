@@ -48,7 +48,7 @@ export const CVData = {
         `Implemented component and integration tests, and replaced most of the JSDom. This resulted in the prevention of numerous bugs, regressions, and increased development speed by eliminating manual activities, while decreasing the chance of potential risks.`,
         `Automated accessibility and screenshot comparison testing with Lighthouse and Playwright to ensure compliance with WCAG standards and deliver a seamless experience for developers and designers. Both accessibility and screenshot changes were reflected in PRs and kept as historical records for trend reports.`,
         `Improved user experience by optimizing performance and loading time. Reduced JS entry point size from 30MiB to 600KiB through techniques like tree shaking, decoupling assets from the bundle, lazy loading, removal of unused libraries, and dead code.`,
-        `Tech stack: TypeScript, Node.js, React, TanStack, Storybook, Playwright, Lighthouse, Cloudflare, AWS, Kubernetes, Docker, Dependabot, CodeQL, SonarQube, Checkmarx.`
+        `Tech stack: TypeScript, Node.js, React, TanStack, Storybook, Playwright, Lighthouse, Cloudflare, AWS, Kubernetes, Docker, Dependabot, CodeQL, SonarQube, Checkmarx`
       ]
     },
     {

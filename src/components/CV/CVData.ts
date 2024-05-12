@@ -31,7 +31,7 @@ export const CVData = {
     'Operating systems: Windows, Linux, Mac',
     'Databases: MS SQL, Oracle, PostgreSQL, MongoDB',
     'Interviewing and mentoring',
-    'Frontend frameworks: Vue.js, React, Storybook',
+    'Frontend frameworks: React, Vue.js, Storybook',
     'Build tools: Vite, Webpack',
     'Code quality tools: ESLint, SonarQube'
   ],
@@ -42,7 +42,13 @@ export const CVData = {
       subTitle: 'Senior Frontend Engineer',
       subStrings: ['Jan 2023 - now, Amsterdam, Netherlands'],
       list: [
-        `Tech stack: TypeScript, Node.js, React, TanStack, Storybook, Playwright, Lighthouse, Cloudflare, AWS, Kubernetes, Docker, Checkmarx, Twistlock`
+        `Built new pages and reusable components using React, while applying best practices and coding standards.`,
+        `Maintained code quality and project security by addressing vulnerabilities identified through automated tools and updating outdated libraries/code with secure alternatives. This resulted in the absence of critical and major vulnerabilities.`,
+        `Implemented CI/CD pipelines in GitHub Actions for both projects, streamlining the build, testing, release, and deployment processes.`,
+        `Implemented component and integration tests, and replaced most of the JSDom. This resulted in the prevention of numerous bugs, regressions, and increased development speed by eliminating manual activities, while decreasing the chance of potential risks.`,
+        `Automated accessibility and screenshot comparison testing with Lighthouse and Playwright to ensure compliance with WCAG standards and deliver a seamless experience for developers and designers. Both accessibility and screenshot changes were reflected in PRs and kept as historical records for trend reports.`,
+        `Improved user experience by optimizing performance and loading time. Reduced JS entry point size from 30MiB to 600KiB through techniques like tree shaking, decoupling assets from the bundle, lazy loading, removal of unused libraries, and dead code.`,
+        `Tech stack: TypeScript, Node.js, React, TanStack, Storybook, Playwright, Lighthouse, Cloudflare, AWS, Kubernetes, Docker, Dependabot, CodeQL, SonarQube, Checkmarx`
       ]
     },
     {

@@ -5,7 +5,6 @@ const baseURL = 'http://localhost:5173'
 export const playwrightBaseConfig: PlaywrightTestConfig = {
   use: {
     viewport: { width: 1536, height: 960 },
-    ignoreHTTPSErrors: true,
     screenshot: 'off',
     baseURL
   },
@@ -20,7 +19,6 @@ export const playwrightBaseConfig: PlaywrightTestConfig = {
   testDir: 'test',
   testMatch: 'override_me',
   globalTeardown: './test/global-teardown.ts',
-  fullyParallel: true,
   forbidOnly: true,
   webServer: {
     command: process.env.CI ? 'vite preview --port 5173' : 'vite dev',

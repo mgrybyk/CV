@@ -32,8 +32,12 @@ jobs:
       - run: npm run build
       - run: npx playwright install --with-deps
       - name: Lighthouse
+        env:
+          VITE_CV_EMAIL: ${{ secrets.VITE_CV_EMAIL }}
         run: npm run test-lighthouse
       - name: Screenshots
+        env:
+          VITE_CV_EMAIL: ${{ secrets.VITE_CV_EMAIL }}
         run: npm run test-screenshots
 
       - name: git commit and push

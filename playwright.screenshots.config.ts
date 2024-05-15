@@ -15,7 +15,7 @@ const config: PlaywrightTestConfig = {
     }
   ],
   retries: 1,
-  updateSnapshots: 'missing',
+  updateSnapshots: 'all',
   testMatch: 'screenshot.spec.ts'
 }
 

@@ -60,8 +60,11 @@ jobs:
           path: gh-pages-dir # checkout path
 
       - name: CV
-        # if: ${{ github.ref == 'refs/heads/main' }}
-        run: mv dist/* gh-pages-dir/
+        if: ${{ github.ref == 'refs/heads/main' }}
+        run: |-
+          rm -rf gh-pages-dir/files
+          rm -rf gh-pages-dir/assets
+          mv dist/* gh-pages-dir/
 
       - name: Lighthouse HTML Report
         if: always()

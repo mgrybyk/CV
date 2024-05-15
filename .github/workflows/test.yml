@@ -46,7 +46,7 @@ jobs:
         with:
           branch: ${{ github.head_ref }}
           commit_message: Update screenshots
-          add_args: 'tests/**/*.png lh-scores/*.json'
+          add_args: 'test/**/*.png lh-scores/*.json'
 
       - name: Checkout gh-pages
         uses: actions/checkout@v3

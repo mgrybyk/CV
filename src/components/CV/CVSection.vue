@@ -6,7 +6,7 @@ defineProps<{
 </script>
 
 <template>
-  <section class="grid break-inside-avoid print:grid-cols-[2fr_5fr] sm:grid-cols-[2fr_5fr]">
+  <section class="grid break-inside-avoid print:grid-cols-[1fr_5fr] sm:grid-cols-[1fr_5fr]">
     <div class="pe-4">
       <slot name="leftSide">
         <div class="group">

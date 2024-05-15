@@ -59,4 +59,8 @@ defineProps<{
   </CVSection>
 </template>
 
-<style scoped></style>
+<style scoped>
+ul {
+  padding-inline-start: 20px;
+}
+</style>

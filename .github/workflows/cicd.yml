@@ -30,6 +30,9 @@ jobs:
       - run: npm ci --no-fund --no-audit --no-progress
       - run: npm run lint
       - run: npm run build
+        env:
+          VITE_CV_EMAIL: ${{ secrets.VITE_CV_EMAIL }}
+          NODE_ENV: production
       - run: npx playwright install --with-deps
       - name: Lighthouse
         env:
@@ -55,6 +58,10 @@ jobs:
         with:
           ref: gh-pages # branch name
           path: gh-pages-dir # checkout path
+
+      - name: CV
+        # if: ${{ github.ref == 'refs/heads/main' }}
+        run: mv dist/* gh-pages-dir/
 
       - name: Lighthouse HTML Report
         if: always()

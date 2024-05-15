@@ -14,9 +14,6 @@ dist-ssr
 coverage
 *.local
 
-/cypress/videos/
-/cypress/screenshots/
-
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
@@ -27,5 +24,12 @@ coverage
 *.sln
 *.sw?
 
-test-results/
-playwright-report/
+# test output
+report
+allure-results
+allure-report
+/lighthouse
+test-results
+
+# local screenshots
+**/*-darwin.png

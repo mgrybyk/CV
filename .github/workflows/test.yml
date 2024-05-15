@@ -1,0 +1,94 @@
+name: Test Action
+
+on:
+  pull_request:
+  push:
+    branches: ['main']
+
+permissions:
+  # Give the default GITHUB_TOKEN write permission to commit and push the changed files back to the repository.
+  contents: write
+  # required by https://github.com/thollander/actions-comment-pull-request
+  pull-requests: write
+
+# Allow only one job per PR or branch
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.ref }}
+  cancel-in-progress: true # cancel jobs in progress
+
+jobs:
+  test:
+    timeout-minutes: 180
+    runs-on: ubuntu-latest
+    name: Build, Test, Report
+
+    steps:
+      # To use this repository's private action,
+      # you must check out the repository
+      - uses: actions/checkout@v3
+
+      - run: npm ci --no-fund --no-audit --no-progress
+      - run: npm run lint
+      - run: npm run build
+      - run: npx playwright install --with-deps
+      - name: Lighthouse
+        run: npm run test-lighthouse
+      - name: Screenshots
+        run: npm run test-screenshots
+
+      - name: git commit and push
+        if: github.event_name == 'pull_request'
+        uses: mgrybyk-org/git-commit-pull-push-action@v1
+        with:
+          branch: ${{ github.head_ref }}
+          commit_message: Update screenshots
+          add_args: 'tests/**/*.png lh-scores/*.json'
+
+      - name: Checkout gh-pages
+        uses: actions/checkout@v3
+        if: always()
+        continue-on-error: true
+        with:
+          ref: gh-pages # branch name
+          path: gh-pages-dir # checkout path
+
+      - name: Lighthouse HTML Report
+        if: always()
+        uses: mgrybyk-org/html-trend-report-action@v1
+        id: lh-html
+        with:
+          report_id: 'Lighthouse Report'
+          gh_pages: 'gh-pages-dir'
+          report_dir: 'lighthouse'
+          list_dirs: ${{ github.ref == 'refs/heads/main' }}
+          branch_cleanup_enabled: ${{ github.ref == 'refs/heads/main' }}
+          max_reports: 30
+
+      - name: Lighthouse Trend Report
+        uses: mgrybyk-org/html-trend-report-action@v1
+        id: lh-trend
+        with:
+          report_id: 'Lighthouse Trend Report'
+          gh_pages: 'gh-pages-dir'
+          report_dir: 'lighthouse'
+          list_dirs: ${{ github.ref == 'refs/heads/main' }}
+          report_type: csv
+          max_reports: 30
+
+      - name: Git Commit and Push Action
+        uses: mgrybyk-org/git-commit-pull-push-action@v1
+        if: always()
+        with:
+          repository: gh-pages-dir
+          branch: gh-pages
+          pull_args: --rebase -X ours
+
+      - name: Comment PR with Lighthouse link
+        if: ${{ always() && github.event_name == 'pull_request' && (steps.lh-html.outputs.report_url || steps.lh-trend.outputs.report_url) }}
+        continue-on-error: true
+        uses: thollander/actions-comment-pull-request@v2
+        with:
+          message: |
+            - [Lighthouse HTML Report](${{ steps.lh-html.outputs.report_url }}) | [Lighthouse Trend Report](${{ steps.lh-trend.outputs.report_url }})
+          comment_tag: test_reports
+          mode: recreate

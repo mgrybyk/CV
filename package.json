@@ -10,7 +10,9 @@
     "build-only": "vite-ssg build",
     "type-check": "vue-tsc --noEmit",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
-    "format": "prettier --write src/"
+    "format": "prettier --write src/",
+    "test-screenshots": "playwright test --config playwright.screenshots.config.ts",
+    "test-lighthouse": "playwright test --config playwright.lighthouse.config.ts"
   },
   "dependencies": {
     "@unocss/reset": "^0.60.2",
@@ -29,7 +31,10 @@
     "@vue/tsconfig": "^0.5.1",
     "eslint": "^8.57.0",
     "eslint-plugin-vue": "^9.26.0",
+    "lighthouse": "^12.0.0",
+    "lighthouse-reporting": "^1.6.7",
     "npm-run-all": "^4.1.5",
+    "playwright-lighthouse": "^4.0.0",
     "prettier": "^3.2.5",
     "typescript": "~5.4.5",
     "unocss": "^0.60.2",

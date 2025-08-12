@@ -13,7 +13,12 @@ const isExpanded = ref(false)
   <CVSection>
     <template #leftSide>
       <h1 class="mb-1 mt-1 font-sans">
-        <p v-once class="mb-1 mt-1 text-2xl text-sky-900">Mykola Grybyk</p>
+        <p
+          v-once
+          class="mb-1 mt-1 text-2xl text-sky-900"
+        >
+          Mykola Grybyk
+        </p>
       </h1>
     </template>
     <template #rightSide>
@@ -28,45 +33,47 @@ const isExpanded = ref(false)
             target="_blank"
             class="text-sky-700 no-underline visited:text-sky-700"
             v-text="email"
-          ></a>
+          />
         </div>
         <div>
           <a
             href="https://www.linkedin.com/in/mykola-grybyk"
             target="_blank"
             class="text-sky-800 no-underline visited:text-sky-700"
-            >linkedin.com/in/mykola-grybyk</a
-          >
+          >linkedin.com/in/mykola-grybyk</a>
           |
           <a
             href="https://github.com/mgrybyk"
             target="_blank"
             class="text-sky-800 no-underline visited:text-sky-700"
-            >github.com/mgrybyk</a
-          >
+          >github.com/mgrybyk</a>
         </div>
       </div>
     </template>
   </CVSection>
-  <CVSection section-title="Summary" section-id="summary">
+  <CVSection
+    section-title="Summary"
+    section-id="summary"
+  >
     <template #rightSide>
       <p>
-        <strong>Full Stack Engineer</strong> with strong analytical and problem-solving skills with
-        more than {{ yearsOfExperience }} years of experience.
+        <strong>Full Stack Engineer</strong> with {{ yearsOfExperience }}+ years of web development
+        experience, specializing in modern React applications and developer tooling.
       </p>
       <p>
-        I enjoy building high-quality, performance-driven, and user-friendly applications, while
-        also automating as many routine tasks as possible, and contributing to open source projects.
+        I build scalable frontend applications and contribute actively to open source projects,
+        including serving on the WebdriverIO technical committee. My background spans both
+        application development and comprehensive testing automation.
       </p>
       <p>
-        I'm willing to work in an interesting project where I can take on responsibility across
-        various areas and tackle diverse tasks. Remote work is strongly preferred.
+        Seeking challenging frontend or full-stack opportunities with significant technical
+        ownership. Remote work strongly preferred.
       </p>
       <p><strong>Languages</strong>: English, Ukrainian, Russian, Spanish (A2).</p>
       <p>
-        <strong>Tech stack (latest)</strong>: TypeScript, Node.js, React, TanStack, Storybook,
-        Playwright, Lighthouse, WebdriverIO, Jest, vitest, Vite, Webpack, Cloudflare, AWS,
-        Kubernetes, Docker, Dependabot, CodeQL, SonarQube, Checkmarx.
+        <strong>Tech stack (latest)</strong>: TypeScript, React, TanStack Query, Next.js, Node.js,
+        Storybook, Vite, Webpack, Tailwind CSS, Playwright, WebdriverIO, Jest, Vitest, AWS,
+        Cloudflare, Docker, Kubernetes, GitHub Actions, ESLint, Prettier.
       </p>
     </template>
   </CVSection>
@@ -82,7 +89,10 @@ const isExpanded = ref(false)
     :sub-strings="item.subStrings"
     :list="item.list"
   />
-  <div class="expand-section" :class="{ expanded: isExpanded }">
+  <div
+    class="expand-section"
+    :class="{ expanded: isExpanded }"
+  >
     <DecoratedSection
       v-for="(item, index) in workingHistoryOld"
       v-once

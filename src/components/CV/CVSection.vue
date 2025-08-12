@@ -10,7 +10,12 @@ defineProps<{
     <div class="pe-4">
       <slot name="leftSide">
         <div class="group">
-          <h2 v-if="sectionTitle" v-once :id="sectionId" class="text-lg font-sans">
+          <h2
+            v-if="sectionTitle"
+            v-once
+            :id="sectionId"
+            class="text-lg font-sans"
+          >
             {{ sectionTitle }}
             <a
               v-if="sectionId"
@@ -18,13 +23,14 @@ defineProps<{
               :href="`#${sectionId}`"
               class="text-sky-700 no-underline opacity-0 group-hover:opacity-100"
               aria-label="Anchor"
-              >#</a
-            >
+            >#</a>
           </h2>
         </div>
       </slot>
     </div>
-    <div class="cv-section-container"><slot name="rightSide"></slot></div>
+    <div class="cv-section-container">
+      <slot name="rightSide" />
+    </div>
   </section>
 </template>
 

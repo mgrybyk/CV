@@ -8,19 +8,33 @@ export const CVData = {
       mainTitle: 'Elsevier',
       subTitle: 'Senior Frontend Engineer',
       subStrings: [
-        'Funding search tool for researchers',
+        'AI solutions for researchers',
         'Sep 2021 - now, Amsterdam, Netherlands',
-        'Projects: Funding Institutional, Graphene (internal web component library)'
+        'Projects: Researcher AI, Scopus AI, Funding Institutional'
       ],
       list: [
-        `Developed GitHub actions for reporting purposes (refer to https://github.com/orgs/mgrybyk-org/repositories) to facilitate the migration from Jenkins to GitHub. This enabled at least 5 teams to transition to new infrastructure, effectively discontinuing the use of the old and costly infrastructure.`,
-        `Implemented screenshot comparison testing using free, open-source solutions, enabling developers and designers to review visual changes within pull requests.`,
-        `Implemented Lighthouse accessibility testing with free, open-source solutions, enabling the visualization of accessibility changes within pull requests and providing a reporting solution for tracking changes over time.`,
-        `Enhanced user experience by optimizing performance and loading times. Reduced the JavaScript entrypoint size from 4MiB to 20KiB across the company-wide component library and from 30MiB to 600KiB in the main project.`,
-        `Upgraded an old Node.js 8 project, addressing hundreds of critical and major vulnerabilities, deprecated packages, and approaches, resulting in a up-to-date, vulnerability-free environment following modern development guidelines.`,
-        `Developed a mock server with automated recording and fixture updates, as well as mock and user-switching modes, simplifying the team's development process.`,
-        `Decoupled the static website from the Java app, resulting in CI/CD processes being more than 3 times faster, simplifying the development process, and enabling proper caching utilization, significantly improving loading times (from minutes to seconds) for customers in certain regions.`,
-        `Tech stack: TypeScript, Node.js, React, TanStack, Storybook, Playwright, Lighthouse, Cloudflare, AWS, Kubernetes, Docker, Dependabot, CodeQL, SonarQube, Checkmarx, Jenkins, Twistlock, Java, RestAssured, JUnit, Postgres`
+        `Led GitHub Actions migration from Jenkins, enabling 5+ teams to transition to modern CI/CD infrastructure and eliminate costly legacy systems.`,
+        `Built visual regression testing with screenshot comparison and Lighthouse accessibility testing, integrated into PR workflows for automated design and accessibility reviews.`,
+        `Optimized application performance: reduced component library bundle from 4MiB to 20KiB and main application from 30MiB to 600KiB, significantly improving load times.`,
+        `Modernized legacy Node.js 8 codebase, resolving 100+ critical vulnerabilities and upgrading to current standards with zero security issues.`,
+        `Architected decoupled frontend deployment, achieving 3x faster CI/CD and reducing customer load times from minutes to seconds in remote regions.`,
+        `Developed Scopus AI search platform - a Perplexity-style solution leveraging Elsevier's scientific database for AI-powered research with citation tracking and deep analysis capabilities.`,
+        `Built comprehensive mock server with automated fixture management and user switching for streamlined development workflows.`,
+        `Tech stack: TypeScript, React, TanStack Query, Node.js, Storybook, Playwright, Lighthouse, AWS, Kubernetes, Docker, GitHub Actions, Postgres, Java`
+      ]
+    },
+    {
+      mainTitle: 'Cryptocurrency Trading Platform',
+      subTitle: 'Personal Projects',
+      subStrings: [
+        'Built automated trading system for cryptocurrency markets with real-time decision making and execution.'
+      ],
+      list: [
+        `Architected microservices ecosystem: decision engine, trade execution agent, multi-source data collector, and Telegram signal monitoring`,
+        `Implemented WebSocket-based inter-service communication for low-latency trade execution`,
+        `Developed Vue.js trading dashboard with real-time charts, P&L tracking, and strategy analytics`,
+        `Integrated multiple data sources (BullX, DEX platforms) for market analysis and signal aggregation`,
+        `Tech stack: TypeScript, Vue.js, Node.js, WebSockets, LowDB`
       ]
     },
     {
@@ -28,8 +42,10 @@ export const CVData = {
       subTitle: 'Senior Software Development Engineer in Test',
       subStrings: ['Dutch energy company', 'Jul 2020 - Jul 2021, Amsterdam, Netherlands'],
       list: [
-        `The company hired me to implement automated testing. After analyzing company processes, I refined the development process (which took most of the time), created a roadmap for integration and end-to-end tests, initiated its implementation, and mentored others to ensure its continuation.`,
-        `I redesigned development pipelines to incorporate static analysis and automated testing, integrating them with PRs. It was a hard journey from having no quality in mind to establishing proper CI/CD and development processes.`
+        `Established automated testing strategy from zero, analyzing existing processes and creating comprehensive roadmap for integration and end-to-end testing implementation.`,
+        `Redesigned development pipelines with integrated static analysis and automated testing in PR workflows, transforming team from no quality processes to modern CI/CD practices.`,
+        `Mentored development team on testing best practices and process adoption to ensure sustainable implementation.`,
+        `Tech stack: TypeScript, Node.js, Jest, Cypress, GitHub Actions, Docker`
       ]
     },
     {
@@ -37,10 +53,10 @@ export const CVData = {
       subTitle: 'Senior Software Development Engineer in Test',
       subStrings: ['MoPlay betting', 'Apr 2018 - Mar 2020,  Malaga, Spain'],
       list: [
-        `Built a local mobile device farm managed with Selenium Grid, enabling the execution of end-to-end tests on real devices.`,
-        `Actively contributed to the WebdriverIO open-source project by participating in code reviews, bug fixes, and developing new features as needed by the product.`,
-        `Led and mentored a team of five automation engineers, providing technical guidance and training.Project: MoPlay betting. - Built a local mobile device farm managed with Selenium Grid, enabling the execution of end-to-end tests on real devices. - Actively contributed to the WebdriverIO open-source project by participating in code reviews, bug fixes, and developing new features as needed by the product. - Led and mentored a team of five automation engineers, providing technical guidance and training.`,
-        `Tech stack: WebdriverIO, Appium, Cypress, BackstopJS, Detox, BrowserStack`
+        `Built local mobile device farm with Selenium Grid for automated testing on real devices, enabling comprehensive cross-platform validation.`,
+        `Contributed to WebdriverIO open-source project as core maintainer, implementing features, reviewing code, and fixing critical bugs.`,
+        `Led team of 5 automation engineers, providing technical mentorship and establishing testing standards for betting platform.`,
+        `Tech stack: WebdriverIO, TypeScript, Appium, Cypress, Selenium Grid, BrowserStack, Detox`
       ]
     },
     {
@@ -51,13 +67,13 @@ export const CVData = {
         'Project: Deployment Automation (corporate Jenkins alternative) and some other related projects'
       ],
       list: [
-        `Implemented Continuous Integration (CI) in a legacy product without automation. I initiated this project from scratch in 2011, which involved ordering hardware, installing it, and managing it in the local company server room. It saved around 2 man-days per week.`,
-        `Implemented a solution for installing and configuring the product in just a couple of clicks, saving approximately 2 hours each time. By the time I left the company, it had been used around 10,000 times.`,
-        `Built a custom dashboard for managing staging environments, which included monitoring versions, aggregating reports, tracking installation and test progress, identifying users working on it, and executing actions such as installing specific software. It decreased time needed for using that environments by around 4-8 times (from 1 man-day to just 1-2 hours).`,
-        `I enjoyed working on feature design implementations to enhance their UI/UX appeal and better align them with customer requests, even though making decisions within limited time and resources was challenging quite often. While I cannot quantify the exact impact, I was pleased to receive positive feedback from customers.`,
-        `Mentored other QAs in developing effective test designs using analytical approaches to enhance testing efficiency and minimize efforts.`,
-        `Implemented over 2,500 automated tests that run reliably on Windows Server, Ubuntu, RedHat and some other operating systems, as well as on Chrome, Firefox, and IE11 browsers.`,
-        `Tech stack: TypeScript, Vue.js, JavaScript, GitHub, Jenkins, Node.js, Java, Selenium, Selenium WebDriver, Docker Products`
+        `Established CI infrastructure from scratch for legacy product, building physical server room setup that saved 2 man-days per week across development teams.`,
+        `Built one-click product installation solution, saving 2 hours per deployment and achieving 10,000+ uses by departure.`,
+        `Developed custom staging environment dashboard with version monitoring, progress tracking, and automated software installation, reducing environment setup time from 1 day to 1-2 hours.`,
+        `Enhanced product UI/UX through feature design implementations, receiving positive customer feedback and improving user satisfaction.`,
+        `Mentored QA team on analytical test design approaches, improving testing efficiency and reducing manual effort.`,
+        `Implemented 2,500+ automated tests running across multiple OS (Windows Server, Ubuntu, RedHat) and browsers (Chrome, Firefox, IE11).`,
+        `Tech stack: TypeScript, Vue.js, JavaScript, Node.js, Java, Selenium WebDriver, Jenkins, Docker, GitHub`
       ]
     }
   ],

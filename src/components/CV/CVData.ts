@@ -8,7 +8,7 @@ export const CVData = {
       mainTitle: 'Elsevier',
       subTitle: 'Senior Frontend Engineer',
       subStrings: [
-        'AI solutions for researchers',
+        'AI-powered research platforms',
         'Sep 2021 - now, Amsterdam, Netherlands',
         'Projects: Researcher AI, Scopus AI, Funding Institutional'
       ],
@@ -27,7 +27,8 @@ export const CVData = {
       mainTitle: 'Cryptocurrency Trading Platform',
       subTitle: 'Personal Projects',
       subStrings: [
-        'Built automated trading system for cryptocurrency markets with real-time decision making and execution.'
+        'Built automated trading system for cryptocurrency markets with real-time decision making and execution.',
+        'May 2024 - Dec 2024'
       ],
       list: [
         `Architected microservices ecosystem: decision engine, trade execution agent, multi-source data collector, and Telegram signal monitoring`,

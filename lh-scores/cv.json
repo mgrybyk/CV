@@ -1,5 +1,11 @@
 {
   "accessibility": {
-    "score": 100
+    "score": 95,
+    "issues": [
+      {
+        "title": "Links rely on color to be distinguishable.",
+        "nodes": 1
+      }
+    ]
   }
 }

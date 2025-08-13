@@ -10,17 +10,18 @@ export const CVData = {
       subStrings: [
         'AI-powered research platforms',
         'Sep 2021 - now, Amsterdam, Netherlands',
-        'Projects: Researcher AI, Scopus AI, Funding Institutional'
+        'Projects: Researcher AI, Scopus AI, Funding Institutional, internal component library (all concurrent)'
       ],
       list: [
+        `Developed Scopus AI search platform - a Perplexity-style solution leveraging Elsevier's scientific database for AI-powered research with citation tracking and deep analysis capabilities.`,
+        `Led technical development of company-wide component library adopted by 5+ teams, supporting platforms generating $100M+ annual revenue.`,
         `Led GitHub Actions migration from Jenkins, enabling 5+ teams to transition to modern CI/CD infrastructure and eliminate costly legacy systems.`,
         `Built visual regression testing with screenshot comparison and Lighthouse accessibility testing, integrated into PR workflows for automated design and accessibility reviews.`,
         `Optimized application performance: reduced component library bundle from 4MiB to 20KiB and main application from 30MiB to 600KiB, significantly improving load times.`,
-        `Modernized legacy Node.js 8 codebase, resolving 100+ critical vulnerabilities and upgrading to current standards with zero security issues.`,
+        `Resolved 100+ critical security vulnerabilities across codebase, implementing modern security standards and achieving zero-vulnerability production environment.`,
         `Architected decoupled frontend deployment, achieving 3x faster CI/CD and reducing customer load times from minutes to seconds in remote regions.`,
-        `Developed Scopus AI search platform - a Perplexity-style solution leveraging Elsevier's scientific database for AI-powered research with citation tracking and deep analysis capabilities.`,
         `Built comprehensive mock server with automated fixture management and user switching for streamlined development workflows.`,
-        `Tech stack: TypeScript, React, TanStack Query, Node.js, Storybook, Playwright, Lighthouse, AWS, Kubernetes, Docker, GitHub Actions, Postgres, Java`
+        `Tech stack: TypeScript, React, TanStack Query, RTK Query, Node.js, Storybook, Playwright, Lighthouse, AWS, Kubernetes, Docker, GitHub Actions, Postgres, Java`
       ]
     },
     {

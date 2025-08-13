@@ -62,17 +62,22 @@ const isExpanded = ref(false)
       </p>
       <p>
         I build scalable frontend applications and contribute actively to open source projects,
-        including serving on the WebdriverIO technical committee. My background spans both
-        application development and comprehensive testing automation.
+        including serving on the WebdriverIO technical committee as one of the
+        <a
+          href="https://github.com/webdriverio/webdriverio/graphs/contributors"
+          target="_blank"
+          class="text-sky-800 visited:text-sky-700"
+        >top contributors</a>. My background spans both application development and comprehensive testing automation.
       </p>
       <p>
-        Seeking challenging frontend or full-stack opportunities with significant technical
+        Open to challenging frontend or full-stack opportunities with significant technical
         ownership. Remote work strongly preferred.
       </p>
+      <p><strong>Visa status</strong>: Dutch Highly Skilled Migrant visa valid until 2028.</p>
       <p><strong>Languages</strong>: English, Ukrainian, Russian, Spanish (A2).</p>
       <p>
-        <strong>Tech stack (latest)</strong>: TypeScript, React, TanStack Query, Next.js, Node.js,
-        Storybook, Vite, Webpack, Tailwind CSS, Playwright, WebdriverIO, Jest, Vitest, AWS,
+        <strong>Tech stack (latest)</strong>: TypeScript, React, TanStack Query, RTK Query, Next.js,
+        Node.js, Storybook, Vite, Webpack, Tailwind CSS, Playwright, WebdriverIO, Jest, Vitest, AWS,
         Cloudflare, Docker, Kubernetes, GitHub Actions, ESLint, Prettier.
       </p>
     </template>

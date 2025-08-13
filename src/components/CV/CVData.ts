@@ -32,10 +32,10 @@ export const CVData = {
         'May 2024 - Dec 2024'
       ],
       list: [
-        `Architected microservices ecosystem: decision engine, trade execution agent, multi-source data collector, and Telegram signal monitoring`,
-        `Implemented WebSocket-based inter-service communication for low-latency trade execution`,
+        `Built a trading application composed of the following components (stand-alone / microservices): Decision engine ('brain'; pricing strategy), trade execution engine (simplistic), data collector (collecting market prices and telegram messages)`,
+        `Implemented WebSocket inter-service communication for low-latency trade execution`,
         `Developed Vue.js trading dashboard with real-time charts, P&L tracking, and strategy analytics`,
-        `Integrated multiple data sources (BullX, DEX platforms) for market analysis and signal aggregation`,
+        `Integrated multiple data sources (BullX, DEXScreener, DEX platforms) for market analysis and signal aggregation`,
         `Tech stack: TypeScript, Vue.js, Node.js, WebSockets, LowDB`
       ]
     },

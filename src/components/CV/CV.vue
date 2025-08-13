@@ -66,7 +66,7 @@ const isExpanded = ref(false)
         <a
           href="https://github.com/webdriverio/webdriverio/graphs/contributors"
           target="_blank"
-          class="text-sky-800 no-underline visited:text-sky-700"
+          class="text-sky-800 visited:text-sky-700"
         >top contributors</a>. My background spans both application development and comprehensive testing automation.
       </p>
       <p>
@@ -76,8 +76,8 @@ const isExpanded = ref(false)
       <p><strong>Visa status</strong>: Dutch Highly Skilled Migrant visa valid until 2028.</p>
       <p><strong>Languages</strong>: English, Ukrainian, Russian, Spanish (A2).</p>
       <p>
-        <strong>Tech stack (latest)</strong>: TypeScript, React, TanStack Query, RTK Query, Next.js, Node.js,
-        Storybook, Vite, Webpack, Tailwind CSS, Playwright, WebdriverIO, Jest, Vitest, AWS,
+        <strong>Tech stack (latest)</strong>: TypeScript, React, TanStack Query, RTK Query, Next.js,
+        Node.js, Storybook, Vite, Webpack, Tailwind CSS, Playwright, WebdriverIO, Jest, Vitest, AWS,
         Cloudflare, Docker, Kubernetes, GitHub Actions, ESLint, Prettier.
       </p>
     </template>

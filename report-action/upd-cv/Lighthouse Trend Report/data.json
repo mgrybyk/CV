@@ -1,0 +1,25 @@
+{
+  "data": [
+    {
+      "name": "cv",
+      "labels": [
+        "accessibility"
+      ],
+      "lines": 1,
+      "records": [
+        {
+          "meta": {
+            "sha": "6ac65e8583131cce3a5788868d546c4166ea9828"
+          },
+          "data": [
+            {
+              "x": 1755115728434,
+              "y": 95
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "title": "Lighthouse Trend Report"
+}

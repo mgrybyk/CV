@@ -8,21 +8,21 @@ export const CVData = {
       mainTitle: 'Elsevier',
       subTitle: 'Senior Frontend Engineer',
       subStrings: [
-        'AI-powered research platforms',
         'Sep 2021 - now, Amsterdam, Netherlands',
-        'Projects: Researcher AI, Scopus AI, Funding Institutional, internal component library (all concurrent)'
+        'Projects: LeapSpace, Scopus AI, company design system'
       ],
       list: [
-        `Developed Scopus AI search platform - a Perplexity-style solution leveraging Elsevier's scientific database for AI-powered research with citation tracking and deep analysis capabilities.`,
-        `Led technical development of company-wide component library adopted by 5+ teams, supporting platforms generating $100M+ annual revenue.`,
-        `Led GitHub Actions migration from Jenkins, enabling 5+ teams to transition to modern CI/CD infrastructure and eliminate costly legacy systems.`,
-        `Built visual regression testing with screenshot comparison and Lighthouse accessibility testing, integrated into PR workflows for automated design and accessibility reviews.`,
-        `Optimized application performance: reduced component library bundle from 4MiB to 20KiB and main application from 30MiB to 600KiB, significantly improving load times.`,
-        `Resolved 100+ critical security vulnerabilities across codebase, implementing modern security standards and achieving zero-vulnerability production environment.`,
-        `Architected decoupled frontend deployment, achieving 3x faster CI/CD and reducing customer load times from minutes to seconds in remote regions.`,
-        `Built comprehensive mock server with automated fixture management and user switching for streamlined development workflows.`,
-        `Tech stack: TypeScript, React, TanStack Query, RTK Query, Node.js, Storybook, Playwright, Lighthouse, AWS, Kubernetes, Docker, GitHub Actions, Postgres, Java`
-      ]
+        `Working on LeapSpace, Elsevier's research-grade AI workspace, primarily across frontend and Node.js middleware, with contributions to Java/Spring Boot services, CI/CD, architecture, and the company design system.`,
+        `Contributed to the company design system used across 5+ teams, working closely with designers and engineers on shared components, frontend architecture, and adoption.`,
+        `Built and evolved Playwright integration testing with mocked backend services, visual regression coverage, and Lighthouse accessibility checks integrated into PR workflows.`,
+        `Led migration from Jenkins to GitHub Actions, helping 5+ teams move to the new CI/CD infrastructure and retire legacy systems.`,
+        `Reduced the component-library bundle from 4 MiB to 20 KiB and the main application bundle from 30 MiB to 600 KiB.`,
+        `Architected decoupled frontend deployment, making CI/CD around 3x faster and reducing application load times from minutes to seconds for users in remote regions.`,
+        `Modernized a legacy Node.js 8 codebase, upgraded dependencies, and resolved 100+ security findings, restoring a clean security baseline.`,
+        `Worked on Scopus AI, an AI-powered research product built on Elsevier's scientific content, including search, citations, and deeper research workflows.`
+      ],
+      techStack:
+        'TypeScript, React, TanStack Query, Node.js, Storybook, Playwright, Lighthouse, AWS, Kubernetes, Docker, GitHub Actions, Postgres, Java / Spring Boot'
     },
     {
       mainTitle: 'Cryptocurrency Trading Platform',
@@ -35,9 +35,9 @@ export const CVData = {
         `Built a trading application composed of the following components (stand-alone / microservices): Decision engine ('brain'; pricing strategy), trade execution engine (simplistic), data collector (collecting market prices and telegram messages)`,
         `Implemented WebSocket inter-service communication for low-latency trade execution`,
         `Developed Vue.js trading dashboard with real-time charts, P&L tracking, and strategy analytics`,
-        `Integrated multiple data sources (BullX, DEXScreener, DEX platforms) for market analysis and signal aggregation`,
-        `Tech stack: TypeScript, Vue.js, Node.js, WebSockets, LowDB`
-      ]
+        `Integrated multiple data sources (BullX, DEXScreener, DEX platforms) for market analysis and signal aggregation`
+      ],
+      techStack: 'TypeScript, Vue.js, Node.js, WebSockets, LowDB'
     },
     {
       mainTitle: 'ServiceHouse',
@@ -46,9 +46,9 @@ export const CVData = {
       list: [
         `Established automated testing strategy from zero, analyzing existing processes and creating comprehensive roadmap for integration and end-to-end testing implementation.`,
         `Redesigned development pipelines with integrated static analysis and automated testing in PR workflows, transforming team from no quality processes to modern CI/CD practices.`,
-        `Mentored development team on testing best practices and process adoption to ensure sustainable implementation.`,
-        `Tech stack: TypeScript, Node.js, Jest, Cypress, GitHub Actions, Docker`
-      ]
+        `Mentored development team on testing best practices and process adoption to ensure sustainable implementation.`
+      ],
+      techStack: 'TypeScript, Node.js, Jest, Cypress, GitHub Actions, Docker'
     },
     {
       mainTitle: 'Ciklum',
@@ -57,9 +57,9 @@ export const CVData = {
       list: [
         `Built local mobile device farm with Selenium Grid for automated testing on real devices, enabling comprehensive cross-platform validation.`,
         `Contributed to WebdriverIO open-source project as core maintainer, implementing features, reviewing code, and fixing critical bugs.`,
-        `Led team of 5 automation engineers, providing technical mentorship and establishing testing standards for betting platform.`,
-        `Tech stack: WebdriverIO, TypeScript, Appium, Cypress, Selenium Grid, BrowserStack, Detox`
-      ]
+        `Led team of 5 automation engineers, providing technical mentorship and establishing testing standards for betting platform.`
+      ],
+      techStack: 'WebdriverIO, TypeScript, Appium, Cypress, Selenium Grid, BrowserStack, Detox'
     },
     {
       mainTitle: 'Micro Focus',
@@ -74,9 +74,10 @@ export const CVData = {
         `Developed custom staging environment dashboard with version monitoring, progress tracking, and automated software installation, reducing environment setup time from 1 day to 1-2 hours.`,
         `Enhanced product UI/UX through feature design implementations, receiving positive customer feedback and improving user satisfaction.`,
         `Mentored QA team on analytical test design approaches, improving testing efficiency and reducing manual effort.`,
-        `Implemented 2,500+ automated tests running across multiple OS (Windows Server, Ubuntu, RedHat) and browsers (Chrome, Firefox, IE11).`,
-        `Tech stack: TypeScript, Vue.js, JavaScript, Node.js, Java, Selenium WebDriver, Jenkins, Docker, GitHub`
-      ]
+        `Implemented 2,500+ automated tests running across multiple OS (Windows Server, Ubuntu, RedHat) and browsers (Chrome, Firefox, IE11).`
+      ],
+      techStack:
+        'TypeScript, Vue.js, JavaScript, Node.js, Java, Selenium WebDriver, Jenkins, Docker, GitHub'
     }
   ],
 

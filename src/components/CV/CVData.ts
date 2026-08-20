@@ -6,7 +6,7 @@ export const CVData = {
   workingHistoryMain: [
     {
       mainTitle: 'Elsevier',
-      subTitle: 'Senior Fullstack Engineer',
+      subTitle: 'Senior Full Stack Engineer',
       subStrings: [
         'Sep 2021 - now, Amsterdam, Netherlands',
         'Projects: LeapSpace, Scopus AI, company design system'

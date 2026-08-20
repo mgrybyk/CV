@@ -51,29 +51,24 @@ const isExpanded = ref(false)
   <CVSection section-title="Summary" section-id="summary">
     <template #rightSide>
       <p>
-        <strong>Full Stack Engineer</strong> with {{ yearsOfExperience }}+ years of web development
-        experience, specializing in modern React applications and developer tooling.
+        <strong>Full Stack Engineer</strong> with {{ yearsOfExperience - 4 }}+ years of web
+        development experience.
       </p>
       <p>
-        I build scalable frontend applications and contribute actively to open source projects,
-        including serving on the WebdriverIO technical committee as one of the
-        <a
-          href="https://github.com/webdriverio/webdriverio/graphs/contributors"
-          target="_blank"
-          class="text-sky-800 visited:text-sky-700"
-          >top contributors</a
-        >. My background spans both application development and comprehensive testing automation.
+        I work mostly with TypeScript, React and Node.js. I started in QA and test automation before
+        moving into frontend and full-stack development, and that testing instinct still influences
+        how I build software.
       </p>
       <p>
-        Open to challenging frontend or full-stack opportunities with significant technical
-        ownership. Remote work strongly preferred.
+        Currently working on LeapSpace at Elsevier, with a focus on frontend and Node.js middleware
+        and regular work across backend services, CI/CD, architecture, and the company design
+        system.
       </p>
-      <p><strong>Visa status</strong>: Dutch Highly Skilled Migrant visa valid until 2028.</p>
-      <p><strong>Languages</strong>: English, Ukrainian, Russian, Spanish (A2).</p>
+      <p>Long-time WebdriverIO contributor and member of its Technical Steering Committee.</p>
+      <p><strong>Languages</strong>: English, Ukrainian, Russian.</p>
       <p>
-        <strong>Tech stack (latest)</strong>: TypeScript, React, TanStack Query, RTK Query, Next.js,
-        Node.js, Storybook, Vite, Webpack, Tailwind CSS, Playwright, WebdriverIO, Jest, Vitest, AWS,
-        Cloudflare, Docker, Kubernetes, GitHub Actions, ESLint, Prettier.
+        <strong>Tech stack</strong>: TypeScript, React, TanStack Query, Next.js, Node.js,
+        Playwright, Storybook, Vite, AWS, Docker, Kubernetes, GitHub Actions
       </p>
     </template>
   </CVSection>
@@ -88,6 +83,7 @@ const isExpanded = ref(false)
     :sub-title="item.subTitle"
     :sub-strings="item.subStrings"
     :list="item.list"
+    :tech-stack="item.techStack"
   />
   <div class="expand-section" :class="{ expanded: isExpanded }">
     <DecoratedSection

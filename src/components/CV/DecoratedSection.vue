@@ -9,6 +9,7 @@ defineProps<{
   subStrings: Array<string>
   paragraphs?: Array<string>
   list?: Array<string>
+  techStack?: string
   link?: { text: string; href: string }
 }>()
 </script>
@@ -45,6 +46,7 @@ defineProps<{
       <ul v-if="list">
         <li v-for="(item, index) in list" v-once :key="index" v-text="item" />
       </ul>
+      <p v-if="techStack" v-once class="text-sm"><strong>Tech stack</strong>: {{ techStack }}</p>
       <p>
         <a
           v-if="link"

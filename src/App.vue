@@ -18,7 +18,7 @@ const print = () => window.print()
   </header>
 
   <main>
-    <div class="mx-auto max-w-screen-md container">
+    <div class="container mx-auto max-w-screen-md">
       <CV />
     </div>
   </main>

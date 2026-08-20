@@ -13,12 +13,7 @@ const isExpanded = ref(false)
   <CVSection>
     <template #leftSide>
       <h1 class="mb-1 mt-1 font-sans">
-        <p
-          v-once
-          class="mb-1 mt-1 text-2xl text-sky-900"
-        >
-          Mykola Grybyk
-        </p>
+        <p v-once class="mb-1 mt-1 text-2xl text-sky-900">Mykola Grybyk</p>
       </h1>
     </template>
     <template #rightSide>
@@ -40,21 +35,20 @@ const isExpanded = ref(false)
             href="https://www.linkedin.com/in/mykola-grybyk"
             target="_blank"
             class="text-sky-800 no-underline visited:text-sky-700"
-          >linkedin.com/in/mykola-grybyk</a>
+            >linkedin.com/in/mykola-grybyk</a
+          >
           |
           <a
             href="https://github.com/mgrybyk"
             target="_blank"
             class="text-sky-800 no-underline visited:text-sky-700"
-          >github.com/mgrybyk</a>
+            >github.com/mgrybyk</a
+          >
         </div>
       </div>
     </template>
   </CVSection>
-  <CVSection
-    section-title="Summary"
-    section-id="summary"
-  >
+  <CVSection section-title="Summary" section-id="summary">
     <template #rightSide>
       <p>
         <strong>Full Stack Engineer</strong> with {{ yearsOfExperience }}+ years of web development
@@ -67,7 +61,8 @@ const isExpanded = ref(false)
           href="https://github.com/webdriverio/webdriverio/graphs/contributors"
           target="_blank"
           class="text-sky-800 visited:text-sky-700"
-        >top contributors</a>. My background spans both application development and comprehensive testing automation.
+          >top contributors</a
+        >. My background spans both application development and comprehensive testing automation.
       </p>
       <p>
         Open to challenging frontend or full-stack opportunities with significant technical
@@ -94,10 +89,7 @@ const isExpanded = ref(false)
     :sub-strings="item.subStrings"
     :list="item.list"
   />
-  <div
-    class="expand-section"
-    :class="{ expanded: isExpanded }"
-  >
+  <div class="expand-section" :class="{ expanded: isExpanded }">
     <DecoratedSection
       v-for="(item, index) in workingHistoryOld"
       v-once

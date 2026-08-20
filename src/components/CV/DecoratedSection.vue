@@ -14,32 +14,22 @@ defineProps<{
 </script>
 
 <template>
-  <CVSection
-    :section-title="sectionTitle"
-    :section-id="sectionId"
-  >
+  <CVSection :section-title="sectionTitle" :section-id="sectionId">
     <template #rightSide>
       <div>
         <h3 class="mb-0 text-lg">
-          <span
-            v-once
-            v-text="mainTitle"
-          />
-          <span
-            v-if="subTitle"
-            class="group font-normal"
-          >
-            / <span
-              v-once
-              v-text="subTitle"
-            />
+          <span v-once v-text="mainTitle" />
+          <span v-if="subTitle" class="group font-normal">
+            / <span v-once v-text="subTitle" />
             <a
               v-if="recordId"
               :id="recordId"
               :href="`#${recordId}`"
               class="ml-1 text-sky-700 no-underline opacity-0 group-hover:opacity-100"
               aria-label="Anchor"
-            >#</a></span>
+              >#</a
+            ></span
+          >
         </h3>
       </div>
       <p
@@ -50,20 +40,10 @@ defineProps<{
         v-text="item"
       />
       <div v-if="paragraphs">
-        <p
-          v-for="(item, index) in paragraphs"
-          v-once
-          :key="index"
-          v-text="item"
-        />
+        <p v-for="(item, index) in paragraphs" v-once :key="index" v-text="item" />
       </div>
       <ul v-if="list">
-        <li
-          v-for="(item, index) in list"
-          v-once
-          :key="index"
-          v-text="item"
-        />
+        <li v-for="(item, index) in list" v-once :key="index" v-text="item" />
       </ul>
       <p>
         <a

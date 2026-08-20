@@ -6,14 +6,14 @@ export const CVData = {
   workingHistoryMain: [
     {
       mainTitle: 'Elsevier',
-      subTitle: 'Senior Frontend Engineer',
+      subTitle: 'Senior Fullstack Engineer',
       subStrings: [
         'Sep 2021 - now, Amsterdam, Netherlands',
         'Projects: LeapSpace, Scopus AI, company design system'
       ],
       list: [
         `Working on LeapSpace, Elsevier's research-grade AI workspace, primarily across frontend and Node.js middleware, with contributions to Java/Spring Boot services, CI/CD, architecture, and the company design system.`,
-        `Contributed to the company design system used across 5+ teams, working closely with designers and engineers on shared components, frontend architecture, and adoption.`,
+        `Contributed to the company design system used across 5+ teams, working closely with designers and engineers on shared components, architecture, and adoption.`,
         `Built and evolved Playwright integration testing with mocked backend services, visual regression coverage, and Lighthouse accessibility checks integrated into PR workflows.`,
         `Led migration from Jenkins to GitHub Actions, helping 5+ teams move to the new CI/CD infrastructure and retire legacy systems.`,
         `Reduced the component-library bundle from 4 MiB to 20 KiB and the main application bundle from 30 MiB to 600 KiB.`,
@@ -65,7 +65,7 @@ export const CVData = {
       mainTitle: 'Micro Focus',
       subTitle: 'Senior QA Automation Engineer',
       subStrings: [
-        'Dec 2011 - Apr 2018,  Kyiv, UA',
+        'Jan 2012 - Apr 2018,  Kyiv, UA',
         'Project: Deployment Automation (corporate Jenkins alternative) and some other related projects'
       ],
       list: [
@@ -85,7 +85,7 @@ export const CVData = {
     {
       mainTitle: 'Wincor-Nixdorf',
       subTitle: 'Junior QA Engineer',
-      subStrings: ['Sep 2010 - Dec 2012,  Kyiv, UA', 'Project: Namos'],
+      subStrings: ['Sep 2010 - Dec 2011,  Kyiv, UA', 'Project: Namos'],
       text: [
         `I began my QA career with guidance from experienced mentors, who taught me industry-standard processes, testing methodologies, and MSSQL debugging techniques. In my role as QA Engineer, I also oversaw the internal QA lab, leveraging my hardware expertise to ensure optimal performance.`,
         `During this time, I created my first C# tool to streamline test data generation and enhance testing efficiency, demonstrating my passion for automation and problem-solving.`

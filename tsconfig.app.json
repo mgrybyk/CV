@@ -74,7 +74,6 @@
     // Set to empty to avoid accidental inclusion of unwanted types
     "types": [],
     "composite": true,
-    "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
     }

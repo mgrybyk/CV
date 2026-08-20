@@ -1,37 +1,27 @@
 import js from '@eslint/js'
-import vue from 'eslint-plugin-vue'
-import typescript from '@typescript-eslint/eslint-plugin'
-import typescriptParser from '@typescript-eslint/parser'
-import vueParser from 'vue-eslint-parser'
-import unocss from '@unocss/eslint-plugin'
+import unocss from '@unocss/eslint-config/flat'
+import skipFormatting from '@vue/eslint-config-prettier/skip-formatting'
+import { withVueTs, vueTsConfigs } from '@vue/eslint-config-typescript'
+import pluginVue from 'eslint-plugin-vue'
 import globals from 'globals'
 
-export default [
+export default withVueTs(
   js.configs.recommended,
-  ...vue.configs['flat/recommended'],
+  pluginVue.configs['flat/recommended'],
+  vueTsConfigs.recommended,
+  unocss,
 
   {
-    files: ['**/*.{js,mjs,cjs,jsx,ts,tsx,vue}'],
+    files: ['src/**/*.{js,mjs,cjs,jsx,ts,tsx,vue}'],
     languageOptions: {
-      ecmaVersion: 'latest',
-      sourceType: 'module',
-      parser: vueParser,
-      parserOptions: {
-        parser: typescriptParser,
-        extraFileExtensions: ['.vue']
-      },
-      globals: {
-        ...globals.browser,
-        ...globals.node
-      }
-    },
-    plugins: {
-      vue,
-      '@typescript-eslint': typescript,
-      '@unocss': unocss
-    },
-    rules: {
-      ...typescript.configs.recommended.rules
+      globals: globals.browser
+    }
+  },
+
+  {
+    files: ['*.{js,mjs,cjs,ts}', 'test/**/*.ts'],
+    languageOptions: {
+      globals: globals.node
     }
   },
 
@@ -40,7 +30,7 @@ export default [
       'dist',
       'node_modules',
       '.git',
-      'lh-scoures',
+      'lh-scores',
       'lighthouse',
       'report',
       'test-results',
@@ -49,5 +39,7 @@ export default [
       'public',
       '.vscode'
     ]
-  }
-]
+  },
+
+  skipFormatting
+)
